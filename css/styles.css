@@ -8,6 +8,9 @@
 	--card-set-gap: 30px;
 	--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+html{
+	scroll-behavior: smooth;
+}
 body {
 	color: var(--title-text-color);
 	/* background: var(--primary-bg-color); */
@@ -410,15 +413,15 @@ img {
 	background: rgba(0, 0, 0, 0.2);
 	
 	opacity: 1;
-	transition: opacity 250ms var(--timing-function); 
+	transition: opacity 250ms var(--timing-function), visibility 250ms var(--timing-function) ; 
 	
 }
 
 .backdrop.is-hidden {
 	opacity: 0;
 	pointer-events: none;
-	/* visibility: hidden; */
-	/* transition: opacity 1000ms var(--timing-function); */
+	visibility: hidden;
+	
 		
 }
 .backdrop.is-hidden .modal {
