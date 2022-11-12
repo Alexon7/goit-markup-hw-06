@@ -57,11 +57,44 @@
 				<button type="button" class="title-button" data-modal-open>Замовити послугу</button>
 				<div class="backdrop is-hidden" data-modal>
 					<div class="modal">
+						<b class="modal-title">Залиште свої дані, ми вам передзвонимо</b>
 						<button class="modal-close-button" data-modal-close>
 							<svg class="modal-close" width="18px" height="18px">
 								<use href="./images/symbol-defs.svg#icon-close-black"></use>
 							</svg>
 						</button>
+						<form class="form">
+							<div class="form-field">
+								<label for="name" class="form-label">Ім'я</label> 
+								<input type="text" name="user-name" id="name" autocomplete="name" required />
+								<svg class="form-icon" width="18px" height="18px">
+									<use href="./images/symbol-defs.svg#icon-person-black"></use>
+								</svg>
+							</div>
+							<div class="form-field">
+								<label for="tel" class="form-label">Телефон</label>
+								<input type="tel" name="user-tel" id="tel" required/>
+								<svg class="form-icon" width="18px" height="18px">
+									<use href="./images/symbol-defs.svg#icon-phone-black"></use>
+								</svg>
+							</div>
+							<div class="form-field">
+								<label for="user-mail" class="form-label">Пошта</label>
+								<input type="email" name="user-mail" id="user-mail" autocomplete="email" required/>
+								<svg class="form-icon" width="18px" height="18px">
+									<use href="./images/symbol-defs.svg#icon-email-black"></use>
+								</svg>
+							</div>
+							<div class="form-field-comments">
+								<label for="comments" class="form-label">Коментар</label>
+								<textarea name="user-comments" id="comments" placeholder="Введіть текст" ></textarea>
+							</div>
+							<div class="form-field">
+								<input type="checkbox" name="contract" id="contract" required />
+								<label for="contract" class="form-label">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
+							</div>
+							<button type="submit" class="form-button">Відправити</button>
+						</form>
 					</div>
 				</div>
 			</section>
