@@ -55,53 +55,12 @@
 			<section class="top-title overlay">
 				<h1 class="title">Ефективні рішення для вашого бізнесу</h1>
 				<button type="button" class="title-button" data-modal-open>Замовити послугу</button>
-				<div class="backdrop is-hidden" data-modal>
-					<div class="modal">
-						<b class="modal-title">Залиште свої дані, ми вам передзвонимо</b>
-						<button class="modal-close-button" data-modal-close>
-							<svg class="modal-close" width="18px" height="18px">
-								<use href="./images/symbol-defs.svg#icon-close-black"></use>
-							</svg>
-						</button>
-						<form class="form">
-							<div class="form-field">
-								<label for="name" class="form-label">Ім'я</label> 
-								<input type="text" name="user-name" id="name" autocomplete="name" required />
-								<svg class="form-icon" width="18px" height="18px">
-									<use href="./images/symbol-defs.svg#icon-person-black"></use>
-								</svg>
-							</div>
-							<div class="form-field">
-								<label for="tel" class="form-label">Телефон</label>
-								<input type="tel" name="user-tel" id="tel" required/>
-								<svg class="form-icon" width="18px" height="18px">
-									<use href="./images/symbol-defs.svg#icon-phone-black"></use>
-								</svg>
-							</div>
-							<div class="form-field">
-								<label for="user-mail" class="form-label">Пошта</label>
-								<input type="email" name="user-mail" id="user-mail" autocomplete="email" required/>
-								<svg class="form-icon" width="18px" height="18px">
-									<use href="./images/symbol-defs.svg#icon-email-black"></use>
-								</svg>
-							</div>
-							<div class="form-field-comments">
-								<label for="comments" class="form-label">Коментар</label>
-								<textarea name="user-comments" id="comments" placeholder="Введіть текст" ></textarea>
-							</div>
-							<div class="form-field">
-								<input type="checkbox" name="contract" id="contract" required />
-								<label for="contract" class="form-label">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
-							</div>
-							<button type="submit" class="form-button">Відправити</button>
-						</form>
-					</div>
-				</div>
+				
 			</section>
 
 			<section class="section">
 				<div class="container">
-					<h2 class="benefits-title">Переваги студії</h2>
+					<h2 class="benefits-title visually-hidden">Переваги студії</h2>
 					<ul class="benefits-main">
 						<li class="item">
 							<div class="item-card">
@@ -382,6 +341,54 @@
 				</div>
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+					<div class="modal">
+						<b class="modal-title">Залиште свої дані, ми вам передзвонимо</b>
+						<button class="modal-close-button" data-modal-close>
+							<svg class="modal-close" width="18px" height="18px">
+								<use href="./images/symbol-defs.svg#icon-close-black"></use>
+							</svg>
+						</button>
+						<form class="form">
+							
+								<label class="form-field">
+									<span class="form-prompt">Ім'я</span> 
+								<input class="field" type="text" name="user-name"  autocomplete="name" required />
+								<svg class="form-icon" width="18px" height="18px">
+									<use href="./images/symbol-defs.svg#icon-person-black"></use>
+								</svg>
+								</label> 
+							
+							<label class="form-field">
+								<span class="form-prompt">Телефон</span>
+								<input class="field" type="tel" name="user-tel" required/>
+								<svg class="form-icon" width="18px" height="18px">
+									<use href="./images/symbol-defs.svg#icon-phone-black"></use>
+								</svg>
+							</label>
+							<label class="form-field">
+								<span class="form-prompt">Пошта</span>
+								<input class="field" type="email" name="user-mail" autocomplete="email" required class="form-input"/>
+								<svg class="form-icon" width="18px" height="18px">
+									<use href="./images/symbol-defs.svg#icon-email-black"></use>
+								</svg>
+							</label>
+							<label class="form-field-comments">
+								<span class="form-prompt">Коментар</span>
+								<textarea name="user-comments" placeholder="Введіть текст" ></textarea>
+							</label>
+							<label class="form-field-check">
+								<input type="checkbox" name="contract" required class="field-check visually-hidden" />
+								<svg  class= "field-icon" width="16px" height="15px">
+									<use class="icon-choice" href="./images/symbol-defs.svg#icon-choice-square"></use>
+									<use class="icon-check" href="./images/symbol-defs.svg#icon-check"></use>
+								</svg>
+								<span class="form-contract">Погоджуюся з розсилкою та приймаю <a class="form-contacts-link" href="">Умови договору</a></span>
+							</label>
+							<button type="submit" class="form-button">Відправити</button>
+						</form>
+					</div>
+				</div>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>
