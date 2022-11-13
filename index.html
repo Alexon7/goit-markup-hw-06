@@ -330,7 +330,7 @@
 					<b class="footer-subscription">Підпишіться на розсилку</b>
 					<form class="form-footer">
 						<label for="mail"></label>
-						<input type="email" name="subscription" id="mail" placeholder="E-mail" />
+						<input class="field-subscription" type="email" name="subscription" id="mail" placeholder="E-mail" />
 						<button type="submit" class="button-subscription"
 							>Підписатися
 							<svg class="subscribe-icon" width="24" height="24">
@@ -353,7 +353,7 @@
 							
 								<label class="form-field">
 									<span class="form-prompt">Ім'я</span> 
-								<input class="field" type="text" name="user-name"  autocomplete="name" required />
+								<input class="form-input" type="text" name="user-name"  autocomplete="name" required />
 								<svg class="form-icon" width="18px" height="18px">
 									<use href="./images/symbol-defs.svg#icon-person-black"></use>
 								</svg>
@@ -361,24 +361,24 @@
 							
 							<label class="form-field">
 								<span class="form-prompt">Телефон</span>
-								<input class="field" type="tel" name="user-tel" required/>
+								<input class="form-input" type="tel" name="user-tel" required/>
 								<svg class="form-icon" width="18px" height="18px">
 									<use href="./images/symbol-defs.svg#icon-phone-black"></use>
 								</svg>
 							</label>
 							<label class="form-field">
 								<span class="form-prompt">Пошта</span>
-								<input class="field" type="email" name="user-mail" autocomplete="email" required class="form-input"/>
+								<input class="form-input" type="email" name="user-mail" autocomplete="email" required />
 								<svg class="form-icon" width="18px" height="18px">
 									<use href="./images/symbol-defs.svg#icon-email-black"></use>
 								</svg>
 							</label>
 							<label class="form-field-comments">
 								<span class="form-prompt">Коментар</span>
-								<textarea name="user-comments" placeholder="Введіть текст" ></textarea>
+								<textarea class= "input-comments" name="user-comments" placeholder="Введіть текст" ></textarea>
 							</label>
 							<label class="form-field-check">
-								<input type="checkbox" name="contract" required class="field-check visually-hidden" />
+								<input class="field-check visually-hidden" type="checkbox" name="contract" required  />
 								<svg  class= "field-icon" width="16px" height="15px">
 									<use class="icon-choice" href="./images/symbol-defs.svg#icon-choice-square"></use>
 									<use class="icon-check" href="./images/symbol-defs.svg#icon-check"></use>

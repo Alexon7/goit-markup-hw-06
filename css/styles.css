@@ -291,6 +291,7 @@ img {
 	font-size: 16px;
 	line-height: 1.88;
 }
+/* -----------------------------------Footer------------------------------------------------- */
 .logo-footer {
 	display: block;
 
@@ -372,6 +373,7 @@ img {
 .link-footer-street:focus {
 	color: var(--accent-color);
 }
+/* -----------------------------------form footer------------------------------- */
 .footer-subscription {
 	display: block;
 	font-weight: 700;
@@ -385,18 +387,20 @@ img {
 	width: 570px;
 	margin-top: 20px;
 }
-.form-footer input {
+.field-subscription {
 	margin-right: 12px;
 	padding: 15px 16px;
 	width: 358px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
-	background: #2f303a;
+	background-color: transparent;
+	outline: transparent;
 	color: rgba(255, 255, 255, 0.6);
+
 	transition: border-color 250ms var(--timing-function);
 }
-.form-footer input::placeholder {
+.field-subscription::placeholder {
 	font-size: 16px;
 	line-height: 1.25;
 
@@ -404,7 +408,7 @@ img {
 
 	color: rgba(255, 255, 255, 0.6);
 }
-.form-footer:focus input {
+.field-subscription:focus {
 	border-color: var(--accent-color);
 }
 .footer-all {
@@ -443,6 +447,7 @@ img {
 .subscribe-icon {
 	margin-left: 10px;
 }
+/* -------------------------------------------------------------------------------- */
 
 .title {
 	margin-bottom: 30px;
@@ -478,6 +483,7 @@ img {
 textarea {
 	resize: none;
 }
+/* ----------------------------Modal---------------------------------------------- */
 .backdrop {
 	position: fixed;
 	top: 0;
@@ -542,6 +548,7 @@ textarea {
 	text-align: center;
 	margin-top: 40px;
 }
+/* ------------------------------------------Modal form------------------------------------------ */
 .form {
 	width: 528px;
 	margin-left: auto;
@@ -556,19 +563,23 @@ textarea {
 	flex-direction: column;
 }
 
-.field {
+.form-input {
 	margin: 0;
 	padding: 14px;
 	height: 40px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
+	outline: transparent;
+	transition: border-color 250ms var(--timing-function);
 }
-.form-field:focus-within + .form-icon {
-	fill: var(--accent-color);
-}
-.form-field:focus-within + .field{
+.form-input:focus,
+.input-comments:focus {
 	border-color: var(--accent-color);
 }
+.form-input:focus + .form-icon {
+	fill: var(--accent-color);
+}
+
 .form-field-comments textarea::placeholder {
 	font-size: 12px;
 	line-height: calc(14 / 12);
@@ -576,11 +587,16 @@ textarea {
 
 	color: rgba(117, 117, 117, 0.5);
 }
-.form-field-comments textarea {
+.input-comments {
 	padding: 12px 16px;
 	width: 448px;
 	height: 120px;
 	margin-top: 4px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	outline: transparent;
+
+	transition: border-color 250ms var(--timing-function);
 }
 
 .form-field-comments {
@@ -603,6 +619,8 @@ textarea {
 	position: absolute;
 	bottom: 11px;
 	left: 12px;
+
+	transition: fill 250ms var(--timing-function);
 }
 .field-check {
 	margin-right: 8px;
@@ -649,6 +667,7 @@ textarea {
 
 	color: var(--accent-button-color);
 }
+/* ---------------------------------------------------------------------------------------- */
 
 .benefits-main {
 	display: flex;
