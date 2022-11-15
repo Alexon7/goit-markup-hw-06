@@ -512,7 +512,7 @@ textarea {
 	/* display: flex;
 	justify-content: center; */
 
-	min-width: 528px;
+	width: 528px;
 	min-height: 581px;
 	padding: 40px;
 
@@ -566,7 +566,7 @@ textarea {
 }
 /* ------------------------------------------Modal form------------------------------------------ */
 .form {
-	width: 528px;
+	
 	margin-left: auto;
 	margin-right: auto;
 	/* padding: 40px; */
